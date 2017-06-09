@@ -5,7 +5,7 @@
 # Copyright:: 2017, The Authors, All Rights Reserved.
 #Install httpd game
 
-if node ['paltform_family'] == "rhel"
+if node ['platform_family'] == "rhel"
 	package = "httpd"
 elsif node ['platform_family'] == "debian"
 	package = "apache2"
